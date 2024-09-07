@@ -1,0 +1,89 @@
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc"; @line = 3; ]
+class CyclesViewManager{
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc"; @line = 6; ]
+    static
+    function formatTime(minutes, seconds) {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_6_49_9_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc" 7 8 ]
+        [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_6_49_9_4_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_6_49_9_4_stop" ]
+        %secondsFormatted.1 = local;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_begin:
+        %tmp.2 = lgetv %seconds;
+        %tmp.3 = 9;
+        %tmp.4 = gt %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_true:
+        %tmp.5 = lgetv %seconds;
+        %tmp.6 = getv function %tmp.5 :toString;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        push %tmp.7;
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_false:
+        %tmp.8 = "0";
+        %tmp.9 = lgetv %seconds;
+        %tmp.10 = getv function %tmp.9 :toString;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = add %tmp.8 %tmp.11;
+        push %tmp.12;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_end:
+        %tmp.13 = phi [%tmp.4 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_begin] [%tmp.7 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_true] [%tmp.12 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_false] [%tmp.13 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_7_31_7_89_end];
+        lputv %secondsFormatted.1 %tmp.13;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc" 8 8 ]
+        %tmp.14 = lgetv %minutes;
+        %tmp.15 = getv function %tmp.14 :toString;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = ":";
+        %tmp.18 = add %tmp.16 %tmp.17;
+        %tmp.20 = lgetv %secondsFormatted.1;
+        %tmp.21 = add %tmp.18 %tmp.20;
+        ret %tmp.21;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_6_49_9_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc"; @line = 11; ]
+    static
+    function formatCycles(cycles) {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_11_41_14_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc" 12 8 ]
+        [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_11_41_14_4_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_11_41_14_4_stop" ]
+        %multipleSign.1 = local;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_begin:
+        %tmp.2 = lgetv %cycles;
+        %tmp.3 = 1;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_true:
+        %tmp.5 = "";
+        push %tmp.5;
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_false:
+        %tmp.6 = "s";
+        push %tmp.6;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_end:
+        %tmp.7 = phi [%tmp.4 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_begin] [%tmp.5 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_true] [%tmp.6 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_false] [%tmp.7 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_12_27_12_46_end];
+        lputv %multipleSign.1 %tmp.7;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc" 13 8 ]
+        %tmp.8 = lgetv %cycles;
+        %tmp.9 = getv function %tmp.8 :toString;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = " cycle";
+        %tmp.12 = add %tmp.10 %tmp.11;
+        %tmp.14 = lgetv %multipleSign.1;
+        %tmp.15 = add %tmp.12 %tmp.14;
+        %tmp.16 = " left";
+        %tmp.17 = add %tmp.15 %tmp.16;
+        ret %tmp.17;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleViewManager_mc_11_41_14_4_stop:
+    }
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleViewManager.mc"; @line = 1; ]
+<init> {
+}

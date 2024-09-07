@@ -1,0 +1,61 @@
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 5; ]
+class DVOTApp extends Application.AppBase{
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 7; ]
+    function initialize() as Void {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTApp_mc_7_26_9_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc" 8 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTApp_mc_7_26_9_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 12; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 16; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    //! Return the initial view of your application here
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 20; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTApp_mc_20_68_24_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc" 21 8 ]
+        %tmp.4 = getv ? :DVOTView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :_view %tmp.1;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc" 22 8 ]
+        %tmp.5 = newa 1;
+        %tmp.7 = getv ? :_view;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 0 %tmp.7;
+        ret %tmp.9;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTApp_mc_20_68_24_4_stop:
+    }
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 28; ]
+function getApp() as DVOTApp {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTApp_mc_28_29_30_0_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc" 29 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 DVOTApp;
+    ret %tmp.4;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTApp_mc_28_29_30_0_stop:
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTApp.mc"; @line = 1; ]
+<init> {
+}

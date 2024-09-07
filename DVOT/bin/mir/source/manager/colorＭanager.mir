@@ -1,0 +1,39 @@
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/colorＭanager.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/colorＭanager.mc"; @line = 3; ]
+class ColorManager{
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/colorＭanager.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/colorＭanager.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/colorＭanager.mc"; @line = 4; multipleColorVersion = true; ]
+    static
+    function get(color) {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_5_31_7_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/colorＭanager.mc" 6 8 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_begin:
+        %tmp.2 = lgetv %color;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_true:
+        %tmp.7 = lgetv %color;
+        push %tmp.7;
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_false:
+        %tmp.8 = getm $.Toybox.Graphics;
+        %tmp.9 = getv %tmp.8 :COLOR_WHITE;
+        push %tmp.9;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_end:
+        %tmp.10 = phi [%tmp.5 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_begin] [%tmp.7 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_true] [%tmp.9 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_false] [%tmp.10 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_6_15_6_64_end];
+        ret %tmp.10;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_colorＭanager_mc_5_31_7_4_stop:
+    }
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/colorＭanager.mc"; @line = 1; ]
+<init> {
+}

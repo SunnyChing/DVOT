@@ -1,0 +1,347 @@
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 1; ]
+import Toybox.Activity;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 6; ]
+class DVOTView extends WatchUi.DataField{
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 8; @position = 15; ]
+    protected
+    var mValue as Numeric;
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 9; @position = 16; ]
+    private
+    var _currentTimerElement;
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 11; ]
+    function initialize() as Void {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_11_26_14_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 12 8 ]
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 13 8 ]
+        %tmp.4 = 0.0f;
+        putv self :mValue %tmp.4;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_11_26_14_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 18; ]
+    function onLayout(dc as Dc) as Void {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_18_40_53_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 21 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :findDrawableById;
+        %tmp.3 = "current_timer";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        putv self :_currentTimerElement %tmp.4;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 22 8 ]
+        %tmp.6 = getv ? :_currentTimerElement;
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.9 = getv ? :ColorManager;
+        %tmp.10 = getv function %tmp.9 :get;
+        %tmp.11 = getm $.Toybox.Graphics;
+        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+        %tmp.13 = invoke %tmp.9 %tmp.10(%tmp.12);
+        invoke %tmp.6 %tmp.7(%tmp.13);
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 25 8 ]
+        [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_18_40_53_4_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_18_40_53_4_stop" ]
+        %obscurityFlags.1 = local;
+        %tmp.15 = getv ? :DataField;
+        %tmp.16 = getv function %tmp.15 :getObscurityFlags;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %obscurityFlags.1 %tmp.17;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 28 8 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_8_50_8_if_stmt:
+        %tmp.19 = lgetv %obscurityFlags.1;
+        %tmp.21 = getv ? :OBSCURE_TOP;
+        %tmp.23 = getv ? :OBSCURE_LEFT;
+        %tmp.24 = bitor %tmp.21 %tmp.23;
+        %tmp.25 = eq %tmp.19 %tmp.24;
+        bf %tmp.25 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_8_50_8_if_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_8_50_8_if_true:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_60_32_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 29 12 ]
+        %tmp.27 = getv ? :View;
+        %tmp.28 = getv function %tmp.27 :setLayout;
+        %tmp.30 = getv ? :Rez;
+        %tmp.31 = getv %tmp.30 :Layouts;
+        %tmp.32 = getv function %tmp.31 :TopLeftLayout;
+        %tmp.34 = lgetv %dc;
+        %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+        invoke %tmp.27 %tmp.28(%tmp.35);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_60_32_8_stop:
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_8_50_8_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_8_50_8_if_false:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 32 15 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_15_50_8_if_stmt:
+        %tmp.37 = lgetv %obscurityFlags.1;
+        %tmp.39 = getv ? :OBSCURE_TOP;
+        %tmp.41 = getv ? :OBSCURE_RIGHT;
+        %tmp.42 = bitor %tmp.39 %tmp.41;
+        %tmp.43 = eq %tmp.37 %tmp.42;
+        bf %tmp.43 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_15_50_8_if_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_15_50_8_if_true:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_68_36_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 33 12 ]
+        %tmp.45 = getv ? :View;
+        %tmp.46 = getv function %tmp.45 :setLayout;
+        %tmp.48 = getv ? :Rez;
+        %tmp.49 = getv %tmp.48 :Layouts;
+        %tmp.50 = getv function %tmp.49 :TopRightLayout;
+        %tmp.52 = lgetv %dc;
+        %tmp.53 = invoke %tmp.49 %tmp.50(%tmp.52);
+        invoke %tmp.45 %tmp.46(%tmp.53);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_68_36_8_stop:
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_15_50_8_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_15_50_8_if_false:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 36 15 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_15_50_8_if_stmt:
+        %tmp.55 = lgetv %obscurityFlags.1;
+        %tmp.57 = getv ? :OBSCURE_BOTTOM;
+        %tmp.59 = getv ? :OBSCURE_LEFT;
+        %tmp.60 = bitor %tmp.57 %tmp.59;
+        %tmp.61 = eq %tmp.55 %tmp.60;
+        bf %tmp.61 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_15_50_8_if_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_15_50_8_if_true:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_70_40_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 37 12 ]
+        %tmp.63 = getv ? :View;
+        %tmp.64 = getv function %tmp.63 :setLayout;
+        %tmp.66 = getv ? :Rez;
+        %tmp.67 = getv %tmp.66 :Layouts;
+        %tmp.68 = getv function %tmp.67 :BottomLeftLayout;
+        %tmp.70 = lgetv %dc;
+        %tmp.71 = invoke %tmp.67 %tmp.68(%tmp.70);
+        invoke %tmp.63 %tmp.64(%tmp.71);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_70_40_8_stop:
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_15_50_8_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_15_50_8_if_false:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 40 15 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_15_50_8_if_stmt:
+        %tmp.73 = lgetv %obscurityFlags.1;
+        %tmp.75 = getv ? :OBSCURE_BOTTOM;
+        %tmp.77 = getv ? :OBSCURE_RIGHT;
+        %tmp.78 = bitor %tmp.75 %tmp.77;
+        %tmp.79 = eq %tmp.73 %tmp.78;
+        bf %tmp.79 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_15_50_8_if_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_15_50_8_if_true:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_71_44_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 41 12 ]
+        %tmp.81 = getv ? :View;
+        %tmp.82 = getv function %tmp.81 :setLayout;
+        %tmp.84 = getv ? :Rez;
+        %tmp.85 = getv %tmp.84 :Layouts;
+        %tmp.86 = getv function %tmp.85 :BottomRightLayout;
+        %tmp.88 = lgetv %dc;
+        %tmp.89 = invoke %tmp.85 %tmp.86(%tmp.88);
+        invoke %tmp.81 %tmp.82(%tmp.89);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_71_44_8_stop:
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_15_50_8_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_15_50_8_if_false:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_44_15_50_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 45 12 ]
+        %tmp.91 = getv ? :View;
+        %tmp.92 = getv function %tmp.91 :setLayout;
+        %tmp.94 = getv ? :Rez;
+        %tmp.95 = getv %tmp.94 :Layouts;
+        %tmp.96 = getv function %tmp.95 :MainLayout;
+        %tmp.98 = lgetv %dc;
+        %tmp.99 = invoke %tmp.95 %tmp.96(%tmp.98);
+        invoke %tmp.91 %tmp.92(%tmp.99);
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 46 12 ]
+        [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_44_15_50_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_44_15_50_8_stop" ]
+        %labelView.2 = local;
+        %tmp.101 = getv ? :View;
+        %tmp.102 = getv function %tmp.101 :findDrawableById;
+        %tmp.103 = "label";
+        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
+        %tmp.105 = as %tmp.104 Text;
+        lputv %labelView.2 %tmp.105;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 47 12 ]
+        %tmp.106 = lgetv %labelView.2;
+        %tmp.107 = lgetv %labelView.2;
+        %tmp.108 = getv %tmp.107 :locY;
+        %tmp.109 = 16;
+        %tmp.110 = sub %tmp.108 %tmp.109;
+        putv %tmp.106 :locY %tmp.110;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 48 12 ]
+        [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_44_15_50_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_44_15_50_8_stop" ]
+        %valueView.3 = local;
+        %tmp.112 = getv ? :View;
+        %tmp.113 = getv function %tmp.112 :findDrawableById;
+        %tmp.114 = "value";
+        %tmp.115 = invoke %tmp.112 %tmp.113(%tmp.114);
+        %tmp.116 = as %tmp.115 Text;
+        lputv %valueView.3 %tmp.116;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 49 12 ]
+        %tmp.117 = lgetv %valueView.3;
+        %tmp.118 = lgetv %valueView.3;
+        %tmp.119 = getv %tmp.118 :locY;
+        %tmp.120 = 7;
+        %tmp.121 = add %tmp.119 %tmp.120;
+        putv %tmp.117 :locY %tmp.121;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_44_15_50_8_stop:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_40_15_50_8_if_end:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_36_15_50_8_if_end:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_32_15_50_8_if_end:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_28_8_50_8_if_end:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 52 8 ]
+        %tmp.123 = getv ? :View;
+        %tmp.124 = getv function %tmp.123 :findDrawableById;
+        %tmp.125 = "label";
+        %tmp.126 = invoke %tmp.123 %tmp.124(%tmp.125);
+        %tmp.127 = as %tmp.126 Text;
+        %tmp.128 = getv function %tmp.127 :setText;
+        %tmp.130 = getv ? :Rez;
+        %tmp.131 = getv %tmp.130 :Strings;
+        %tmp.132 = getv %tmp.131 :label;
+        invoke %tmp.127 %tmp.128(%tmp.132);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_18_40_53_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 59; ]
+    function compute(info as Activity.Info) as Void {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_59_52_68_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 61 8 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_61_8_67_8_if_stmt:
+        %tmp.2 = lgetv %info;
+        %tmp.4 = const :currentHeartRate;
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_61_8_67_8_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_61_8_67_8_if_true:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_61_38_67_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 62 12 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_12_66_12_if_stmt:
+        %tmp.6 = lgetv %info;
+        %tmp.7 = as %tmp.6 { (interface { var currentHeartRate; }) };
+        %tmp.8 = getv %tmp.7 :currentHeartRate;
+        %tmp.9 = null;
+        %tmp.10 = ne %tmp.8 %tmp.9;
+        bf %tmp.10 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_12_66_12_if_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_12_66_12_if_true:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_45_64_12_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 63 16 ]
+        %tmp.11 = lgetv %info;
+        %tmp.12 = as %tmp.11 { (interface { var currentHeartRate; }) };
+        %tmp.13 = getv %tmp.12 :currentHeartRate;
+        %tmp.14 = as %tmp.13 Number;
+        putv self :mValue %tmp.14;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_45_64_12_stop:
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_12_66_12_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_12_66_12_if_false:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_64_19_66_12_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 65 16 ]
+        %tmp.15 = 0.0f;
+        putv self :mValue %tmp.15;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_64_19_66_12_stop:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_62_12_66_12_if_end:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_61_38_67_8_stop:
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_61_8_67_8_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_61_8_67_8_if_end:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_59_52_68_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 72; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_72_40_87_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 74 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "Background";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :getBackgroundColor;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        invoke %tmp.6 %tmp.7(%tmp.10);
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 77 8 ]
+        [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_72_40_87_4_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_72_40_87_4_stop" ]
+        %value.1 = local;
+        %tmp.12 = getv ? :View;
+        %tmp.13 = getv function %tmp.12 :findDrawableById;
+        %tmp.14 = "value";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = as %tmp.15 Text;
+        lputv %value.1 %tmp.16;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 78 8 ]
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_8_82_8_if_stmt:
+        %tmp.17 = self;
+        %tmp.18 = getv function %tmp.17 :getBackgroundColor;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :COLOR_BLACK;
+        %tmp.22 = eq %tmp.19 %tmp.21;
+        bf %tmp.22 @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_8_82_8_if_false;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_8_82_8_if_true:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_58_80_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 79 12 ]
+        %tmp.23 = lgetv %value.1;
+        %tmp.24 = getv function %tmp.23 :setColor;
+        %tmp.25 = getm $.Toybox.Graphics;
+        %tmp.26 = getv %tmp.25 :COLOR_WHITE;
+        invoke %tmp.23 %tmp.24(%tmp.26);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_58_80_8_stop:
+        goto @_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_8_82_8_if_end;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_8_82_8_if_false:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_80_15_82_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 81 12 ]
+        %tmp.27 = lgetv %value.1;
+        %tmp.28 = getv function %tmp.27 :setColor;
+        %tmp.29 = getm $.Toybox.Graphics;
+        %tmp.30 = getv %tmp.29 :COLOR_BLACK;
+        invoke %tmp.27 %tmp.28(%tmp.30);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_80_15_82_8_stop:
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_78_8_82_8_if_end:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 83 8 ]
+        %tmp.31 = lgetv %value.1;
+        %tmp.32 = getv function %tmp.31 :setText;
+        %tmp.34 = getv ? :mValue;
+        %tmp.35 = getv function %tmp.34 :format;
+        %tmp.36 = "%.2f";
+        %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
+        invoke %tmp.31 %tmp.32(%tmp.37);
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 86 8 ]
+        %tmp.39 = getv ? :View;
+        %tmp.40 = getv function %tmp.39 :onUpdate;
+        %tmp.42 = lgetv %dc;
+        invoke %tmp.39 %tmp.40(%tmp.42);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_72_40_87_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 90; ]
+    function setTimerValue(value) as Void {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_90_42_95_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 91 8 ]
+        [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_90_42_95_4_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_90_42_95_4_stop" ]
+        %current.1 = local;
+        %tmp.2 = getv ? :CyclesViewManager;
+        %tmp.3 = getv function %tmp.2 :formatTime;
+        %tmp.5 = lgetv %value;
+        %tmp.6 = 60;
+        %tmp.7 = div %tmp.5 %tmp.6;
+        %tmp.9 = lgetv %value;
+        %tmp.10 = 60;
+        %tmp.11 = mod %tmp.9 %tmp.10;
+        %tmp.12 = invoke %tmp.2 %tmp.3(%tmp.7, %tmp.11);
+        lputv %current.1 %tmp.12;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 92 8 ]
+        %tmp.14 = getv ? :_currentTimerElement;
+        %tmp.15 = getv function %tmp.14 :setText;
+        %tmp.17 = lgetv %current.1;
+        invoke %tmp.14 %tmp.15(%tmp.17);
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc" 94 8 ]
+        %tmp.18 = getm $.Toybox.WatchUi;
+        %tmp.19 = getv function %tmp.18 :requestUpdate;
+        invoke %tmp.18 %tmp.19();
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_DVOTView_mc_90_42_95_4_stop:
+    }
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTView.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,1932 @@
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 12; ]
+    module Layouts {
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 13; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 14 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_stop" ]
+            %rez_cmp_local_var_dc_getHeight.1 = local;
+            %tmp.1 = lgetv %dc;
+            %tmp.2 = getv function %tmp.1 :getHeight;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getHeight.1 %tmp.3;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 16 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.2 = local;
+            %tmp.4 = lgetv %dc;
+            %tmp.5 = getv function %tmp.4 :getWidth;
+            %tmp.6 = invoke %tmp.4 %tmp.5();
+            lputv %rez_cmp_local_var_dc_getWidth.2 %tmp.6;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 18 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_stop" ]
+            %rez_cmp_local_custom_drawable_16563052374327906062.3 = local;
+            %tmp.10 = getv ? :Background;
+            %tmp.7 = newc %tmp.10 ();
+            lputv %rez_cmp_local_custom_drawable_16563052374327906062.3 %tmp.7;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 20 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_stop" ]
+            %rez_cmp_local_text_label.4 = local;
+            %tmp.13 = getm $.Toybox.WatchUi;
+            %tmp.14 = getv function ? %tmp.13 :Text;
+            %tmp.15 = newd 6;
+            %tmp.17 = const :identifier;
+            %tmp.18 = "label";
+            %tmp.19 = dup %tmp.15;
+            %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+            %tmp.22 = const :color;
+            %tmp.23 = getm $.Toybox.Graphics;
+            %tmp.24 = getv %tmp.23 :COLOR_LT_GRAY;
+            %tmp.25 = dup %tmp.20;
+            %tmp.26 = aputv %tmp.25 %tmp.22 %tmp.24;
+            %tmp.28 = const :locX;
+            %tmp.30 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            %tmp.31 = 0.5;
+            %tmp.32 = mul %tmp.30 %tmp.31;
+            %tmp.33 = dup %tmp.26;
+            %tmp.34 = aputv %tmp.33 %tmp.28 %tmp.32;
+            %tmp.36 = const :locY;
+            %tmp.38 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            %tmp.39 = lgetv %dc;
+            %tmp.40 = getv function %tmp.39 :getFontHeight;
+            %tmp.41 = getm $.Toybox.Graphics;
+            %tmp.42 = getv %tmp.41 :FONT_TINY;
+            %tmp.43 = invoke %tmp.39 %tmp.40(%tmp.42);
+            %tmp.44 = sub %tmp.38 %tmp.43;
+            %tmp.45 = 0.5;
+            %tmp.46 = mul %tmp.44 %tmp.45;
+            %tmp.47 = dup %tmp.34;
+            %tmp.48 = aputv %tmp.47 %tmp.36 %tmp.46;
+            %tmp.50 = const :justification;
+            %tmp.51 = getm $.Toybox.Graphics;
+            %tmp.52 = getv %tmp.51 :TEXT_JUSTIFY_CENTER;
+            %tmp.53 = dup %tmp.48;
+            %tmp.54 = aputv %tmp.53 %tmp.50 %tmp.52;
+            %tmp.56 = const :font;
+            %tmp.57 = getm $.Toybox.Graphics;
+            %tmp.58 = getv %tmp.57 :FONT_TINY;
+            %tmp.59 = dup %tmp.54;
+            %tmp.60 = aputv %tmp.59 %tmp.56 %tmp.58;
+            %tmp.11 = newc %tmp.14 (%tmp.60);
+            lputv %rez_cmp_local_text_label.4 %tmp.11;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 22 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_stop" ]
+            %rez_cmp_local_text_value.5 = local;
+            %tmp.63 = getm $.Toybox.WatchUi;
+            %tmp.64 = getv function ? %tmp.63 :Text;
+            %tmp.65 = newd 6;
+            %tmp.67 = const :identifier;
+            %tmp.68 = "value";
+            %tmp.69 = dup %tmp.65;
+            %tmp.70 = aputv %tmp.69 %tmp.67 %tmp.68;
+            %tmp.72 = const :color;
+            %tmp.73 = getm $.Toybox.Graphics;
+            %tmp.74 = getv %tmp.73 :COLOR_WHITE;
+            %tmp.75 = dup %tmp.70;
+            %tmp.76 = aputv %tmp.75 %tmp.72 %tmp.74;
+            %tmp.78 = const :locX;
+            %tmp.80 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            %tmp.81 = 0.5;
+            %tmp.82 = mul %tmp.80 %tmp.81;
+            %tmp.83 = dup %tmp.76;
+            %tmp.84 = aputv %tmp.83 %tmp.78 %tmp.82;
+            %tmp.86 = const :locY;
+            %tmp.88 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            %tmp.89 = lgetv %dc;
+            %tmp.90 = getv function %tmp.89 :getFontHeight;
+            %tmp.91 = getm $.Toybox.Graphics;
+            %tmp.92 = getv %tmp.91 :FONT_LARGE;
+            %tmp.93 = invoke %tmp.89 %tmp.90(%tmp.92);
+            %tmp.94 = sub %tmp.88 %tmp.93;
+            %tmp.95 = 0.5;
+            %tmp.96 = mul %tmp.94 %tmp.95;
+            %tmp.97 = dup %tmp.84;
+            %tmp.98 = aputv %tmp.97 %tmp.86 %tmp.96;
+            %tmp.100 = const :justification;
+            %tmp.101 = getm $.Toybox.Graphics;
+            %tmp.102 = getv %tmp.101 :TEXT_JUSTIFY_CENTER;
+            %tmp.103 = dup %tmp.98;
+            %tmp.104 = aputv %tmp.103 %tmp.100 %tmp.102;
+            %tmp.106 = const :font;
+            %tmp.107 = getm $.Toybox.Graphics;
+            %tmp.108 = getv %tmp.107 :FONT_LARGE;
+            %tmp.109 = dup %tmp.104;
+            %tmp.110 = aputv %tmp.109 %tmp.106 %tmp.108;
+            %tmp.61 = newc %tmp.64 (%tmp.110);
+            lputv %rez_cmp_local_text_value.5 %tmp.61;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 24 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_stop" ]
+            %rez_cmp_local_text_current_timer.6 = local;
+            %tmp.113 = getm $.Toybox.WatchUi;
+            %tmp.114 = getv function ? %tmp.113 :Text;
+            %tmp.115 = newd 6;
+            %tmp.117 = const :identifier;
+            %tmp.118 = "current_timer";
+            %tmp.119 = dup %tmp.115;
+            %tmp.120 = aputv %tmp.119 %tmp.117 %tmp.118;
+            %tmp.122 = const :locX;
+            %tmp.124 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            %tmp.125 = 0.5;
+            %tmp.126 = mul %tmp.124 %tmp.125;
+            %tmp.127 = dup %tmp.120;
+            %tmp.128 = aputv %tmp.127 %tmp.122 %tmp.126;
+            %tmp.130 = const :locY;
+            %tmp.132 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            %tmp.133 = 70;
+            %tmp.134 = 100.0;
+            %tmp.135 = div %tmp.133 %tmp.134;
+            %tmp.136 = mul %tmp.132 %tmp.135;
+            %tmp.137 = dup %tmp.128;
+            %tmp.138 = aputv %tmp.137 %tmp.130 %tmp.136;
+            %tmp.140 = const :text;
+            %tmp.141 = "0:30x";
+            %tmp.142 = dup %tmp.138;
+            %tmp.143 = aputv %tmp.142 %tmp.140 %tmp.141;
+            %tmp.145 = const :justification;
+            %tmp.146 = getm $.Toybox.Graphics;
+            %tmp.147 = getv %tmp.146 :TEXT_JUSTIFY_CENTER;
+            %tmp.148 = dup %tmp.143;
+            %tmp.149 = aputv %tmp.148 %tmp.145 %tmp.147;
+            %tmp.151 = const :font;
+            %tmp.152 = getm $.Toybox.Graphics;
+            %tmp.153 = getv %tmp.152 :FONT_SMALL;
+            %tmp.154 = dup %tmp.149;
+            %tmp.155 = aputv %tmp.154 %tmp.151 %tmp.153;
+            %tmp.111 = newc %tmp.114 (%tmp.155);
+            lputv %rez_cmp_local_text_current_timer.6 %tmp.111;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 26 12 ]
+            %tmp.156 = newa 4 Array<WatchUi.Drawable>;
+            %tmp.158 = lgetv %rez_cmp_local_custom_drawable_16563052374327906062.3;
+            %tmp.159 = dup %tmp.156;
+            %tmp.160 = aputv %tmp.159 0 %tmp.158;
+            %tmp.162 = lgetv %rez_cmp_local_text_label.4;
+            %tmp.163 = dup %tmp.160;
+            %tmp.164 = aputv %tmp.163 1 %tmp.162;
+            %tmp.166 = lgetv %rez_cmp_local_text_value.5;
+            %tmp.167 = dup %tmp.164;
+            %tmp.168 = aputv %tmp.167 2 %tmp.166;
+            %tmp.170 = lgetv %rez_cmp_local_text_current_timer.6;
+            %tmp.171 = dup %tmp.168;
+            %tmp.172 = aputv %tmp.171 3 %tmp.170;
+            ret %tmp.172;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_13_74_27_8_stop:
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 29; ]
+        function TopLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 30 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_stop" ]
+            %rez_cmp_local_custom_drawable_20616072648125076521.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_20616072648125076521.1 %tmp.1;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 32 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 95;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 75;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_RIGHT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 34 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 95;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 42;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_RIGHT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 36 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_20616072648125076521.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_29_77_37_8_stop:
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 39; ]
+        function TopRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 40 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_stop" ]
+            %rez_cmp_local_custom_drawable_16418773518850083799.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_16418773518850083799.1 %tmp.1;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 42 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 14;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 75;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_LEFT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 44 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 14;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 42;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_LEFT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 46 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_16418773518850083799.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_39_78_47_8_stop:
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 49; ]
+        function BottomLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 50 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_stop" ]
+            %rez_cmp_local_custom_drawable_21172394094394540156.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_21172394094394540156.1 %tmp.1;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 52 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 95;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 10;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_RIGHT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 54 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 95;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 27;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_RIGHT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 56 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_21172394094394540156.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_49_80_57_8_stop:
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 59; ]
+        function BottomRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 60 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_stop" ]
+            %rez_cmp_local_custom_drawable_65023900260782402718.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_65023900260782402718.1 %tmp.1;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 62 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 14;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 10;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_LEFT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 64 12 ]
+            [ "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_start" "_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 14;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 27;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_LEFT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 66 12 ]
+            %tmp.81 = newa 3 Array<WatchUi.Drawable>;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_65023900260782402718.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_bin_gen_006_B3990_00_source_Rez_mcgen_59_81_67_8_stop:
+        }
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 70; ]
+    module Strings {
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 70; ]
+        <init> {
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 71; @position = 27; initialized = true; ]
+        var label as ResourceId;
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 72; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 75; ]
+    module Styles {
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 75; ]
+        <init> {
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 76; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 76; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 77; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 80; ]
+        module system_size__menu_header {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 80; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 81; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 82; @position = 18; ]
+            const height as Number = 81;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 85; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 85; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 86; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 87; @position = 18; ]
+            const y as Number = 173;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 90; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 90; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 91; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 94; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 94; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 95; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 96; @position = 18; ]
+            const y as Number = 26;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 99; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 99; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 100; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__about.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 101; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 102; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 103; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 106; ]
+        module system_icon_light__question {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 106; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 107; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__question.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 108; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 111; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 111; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 112; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 115; ]
+        module prompt_font__title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 115; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 116 18 ]
+                %tmp.94 = getm $.Toybox.Graphics;
+                %tmp.95 = getv %tmp.94 :TEXT_JUSTIFY_CENTER;
+                %tmp.96 = getm $.Toybox.Graphics;
+                %tmp.97 = getv %tmp.96 :TEXT_JUSTIFY_VCENTER;
+                %tmp.98 = bitor %tmp.95 %tmp.97;
+                putv self :justification %tmp.98;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 117 18 ]
+                %tmp.99 = getm $.Toybox.Graphics;
+                %tmp.100 = getv %tmp.99 :FONT_XTINY;
+                putv self :font %tmp.100;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 116; @position = 18; ]
+            const justification;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 117; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 120; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 120; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 121; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__discard.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 122; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 123; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 124; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 127; ]
+        module system_size__menu_item {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 127; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 128; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 129; @position = 18; ]
+            const height as Number = 68;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 132; ]
+        module system_color_dark__text {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 132; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 134 18 ]
+                %tmp.101 = getm $.Toybox.Graphics;
+                %tmp.102 = getv %tmp.101 :COLOR_TRANSPARENT;
+                putv self :background %tmp.102;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 133; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 134; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 137; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 137; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 138; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__discard.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 139; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 142; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 142; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 143; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 144; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 147; ]
+        module prompt_size__title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 147; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 148; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 149; @position = 18; ]
+            const height as Number = 48;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 152; ]
+        module confirmation_font__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 152; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 153 18 ]
+                %tmp.103 = getm $.Toybox.Graphics;
+                %tmp.104 = getv %tmp.103 :TEXT_JUSTIFY_CENTER;
+                %tmp.105 = getm $.Toybox.Graphics;
+                %tmp.106 = getv %tmp.105 :TEXT_JUSTIFY_VCENTER;
+                %tmp.107 = bitor %tmp.104 %tmp.106;
+                putv self :justification %tmp.107;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 154 18 ]
+                %tmp.108 = getm $.Toybox.Graphics;
+                %tmp.109 = getv %tmp.108 :FONT_TINY;
+                putv self :font %tmp.109;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 153; @position = 18; ]
+            const justification;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 154; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 157; ]
+        module system_color_dark__background {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 157; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 158; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 159; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 162; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 162; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 163; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 164; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 167; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 167; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 168; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 169; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 170; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 173; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 173; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 174 18 ]
+                %tmp.110 = getm $.Toybox.WatchUi;
+                %tmp.111 = getv %tmp.110 :KEY_ENTER;
+                putv self :button %tmp.111;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 174; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 177; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 177; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 178 18 ]
+                %tmp.112 = getm $.Toybox.Graphics;
+                %tmp.113 = getv %tmp.112 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.113;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 179 18 ]
+                %tmp.114 = getm $.Toybox.Graphics;
+                %tmp.115 = getv %tmp.114 :FONT_TINY;
+                putv self :font %tmp.115;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 178; @position = 18; ]
+            const justification;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 179; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 182; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 183; @position = 18; ]
+            const x as Number = 52;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 184; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 187; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 187; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 188; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 189; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 192; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 193; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 194; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 197; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 197; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 198; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 199; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 202; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 202; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 203; @position = 18; ]
+            const x as Number = 227;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 204; @position = 18; ]
+            const y as Number = 53;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 207; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 207; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 208; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 209; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 212; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 212; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 213; @position = 18; ]
+            const x as Number = 1;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 214; @position = 18; ]
+            const y as Number = 109;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 217; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 217; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 218; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 219; @position = 18; ]
+            const height as Number = 208;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 222; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 222; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 223; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 224; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 227; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 227; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 228; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 229; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 232; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 232; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 233 18 ]
+                %tmp.116 = getm $.Toybox.WatchUi;
+                %tmp.117 = getv %tmp.116 :KEY_ENTER;
+                putv self :button %tmp.117;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 233; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 236; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 236; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 237; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 238; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 241; ]
+        module system_input__action_menu {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 241; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 242 18 ]
+                %tmp.118 = getm $.Toybox.WatchUi;
+                %tmp.119 = getv %tmp.118 :KEY_ENTER;
+                putv self :button %tmp.119;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 242; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 245; ]
+        module system_icon_light__save {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 245; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 246; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__save.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 247; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 250; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 250; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 252 18 ]
+                %tmp.120 = getm $.Toybox.Graphics;
+                %tmp.121 = getv %tmp.120 :COLOR_TRANSPARENT;
+                putv self :background %tmp.121;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 251; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 252; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 255; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 255; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 256; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 259; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 259; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 260; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__warning.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 261; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 264; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 264; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 266 18 ]
+                %tmp.122 = getm $.Toybox.Graphics;
+                %tmp.123 = getv %tmp.122 :COLOR_TRANSPARENT;
+                putv self :background %tmp.123;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 265; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 266; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 269; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 269; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 270; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 271; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 274; ]
+        module activity_color_light__background {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 274; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 275; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 276; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 279; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 279; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 280; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 281; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 284; ]
+        module system_size__screen {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 284; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 285; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 286; @position = 18; ]
+            const height as Number = 260;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 289; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 289; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 290; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 291; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 294; ]
+        module system_color_light__background {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 294; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 295; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 296; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 299; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 299; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 300; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 301; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 304; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 304; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 305; @position = 18; ]
+            const x as Number = 205;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 306; @position = 18; ]
+            const y as Number = 50;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 309; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 309; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 311 18 ]
+                %tmp.124 = getm $.Toybox.Graphics;
+                %tmp.125 = getv %tmp.124 :COLOR_TRANSPARENT;
+                putv self :background %tmp.125;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 310; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 311; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 314; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 314; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 315 18 ]
+                %tmp.126 = getm $.Toybox.WatchUi;
+                %tmp.127 = getv %tmp.126 :KEY_DOWN;
+                putv self :button %tmp.127;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 315; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 318; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 319; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 320; @position = 18; ]
+            const y as Number = 78;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 323; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 324; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__search.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 325; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 326; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 327; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 330; ]
+        module activity_color_light__text {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 330; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 332 18 ]
+                %tmp.128 = getm $.Toybox.Graphics;
+                %tmp.129 = getv %tmp.128 :COLOR_TRANSPARENT;
+                putv self :background %tmp.129;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 331; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 332; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 335; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 335; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 336; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 337; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 340; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 340; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 341; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__save.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 342; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 343; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 344; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 347; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 347; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 348; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 349; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 352; ]
+        module system_icon_light__search {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 352; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 353; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__search.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 354; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 357; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 357; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 358; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 359; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 362; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 362; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 363; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_positive__hint_button_left_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 364; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 367; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 367; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
+            const x as Number = 224;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 369; @position = 18; ]
+            const y as Number = 172;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 372; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 373; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 374; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 377; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 377; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 379 18 ]
+                %tmp.130 = getm $.Toybox.Graphics;
+                %tmp.131 = getv %tmp.130 :COLOR_TRANSPARENT;
+                putv self :background %tmp.131;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 378; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 379; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 382; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 382; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 383; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 384; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 387; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 387; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 389 18 ]
+                %tmp.132 = getm $.Toybox.Graphics;
+                %tmp.133 = getv %tmp.132 :COLOR_TRANSPARENT;
+                putv self :background %tmp.133;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 388; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 389; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 392; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 392; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 393; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 394; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 397; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 397; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 398; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 399; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 402; ]
+        module prompt_loc__title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 402; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 403; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 404; @position = 18; ]
+            const y as Number = 19;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 407; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 407; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 408; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 411; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 411; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 413 18 ]
+                %tmp.134 = getm $.Toybox.Graphics;
+                %tmp.135 = getv %tmp.134 :COLOR_TRANSPARENT;
+                putv self :background %tmp.135;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 412; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 413; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 416; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 416; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 417; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 418; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 421; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 421; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 422; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 423; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 426; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 427; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 428; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 431; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 431; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 432; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__cancel.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 433; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 436; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 436; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 437; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 438; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 441; ]
+        module system_icon_light__about {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 442; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__about.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 443; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 446; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 446; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 447; @position = 18; ]
+            const scaleX as Number = 21;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 448; @position = 18; ]
+            const scaleY as Number = 21;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 449; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 452; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 453; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 456; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 457; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 458; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 461; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 461; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 462; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 463; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 466; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 466; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 467; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 470; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 471; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 474; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 474; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 475; @position = 18; ]
+            const x as Number = 13;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 476; @position = 18; ]
+            const y as Number = 174;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 477; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 480; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 480; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 481; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 482; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 485; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 485; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 486; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 487; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 490; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 490; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 491; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 492; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 495; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 495; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 496; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 497; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 500; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 500; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 501; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 502; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 503; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 506; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 506; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 507; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_destructive__warning.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 508; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 511; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 511; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 512; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 515; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 515; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 516; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__cancel.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 517; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 518; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 519; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 522; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 522; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 523; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 524; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 527; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 527; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 528; @position = 18; ]
+            const x as Number = 224;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 529; @position = 18; ]
+            const y as Number = 50;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 532; ]
+        module system_color_light__text {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 532; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 534 18 ]
+                %tmp.136 = getm $.Toybox.Graphics;
+                %tmp.137 = getv %tmp.136 :COLOR_TRANSPARENT;
+                putv self :background %tmp.137;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 533; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 534; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 537; ]
+        module system_icon_light__check {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 537; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 538; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__check.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 539; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 542; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 542; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 543 18 ]
+                %tmp.138 = getm $.Toybox.WatchUi;
+                %tmp.139 = getv %tmp.138 :KEY_DOWN;
+                putv self :button %tmp.139;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 543; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 546; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 546; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 547; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__revert.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 548; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 551; ]
+        module system_size__subwindow {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 551; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 552; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 555; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 555; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 556; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 557; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 560; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 560; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 561; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__check.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 562; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 563; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 564; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 567; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 567; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 568; @position = 18; ]
+            const x as Number = 13;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 569; @position = 18; ]
+            const y as Number = 174;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 570; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 573; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 573; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 574; @position = 18; ]
+            const x as Number = 208;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 575; @position = 18; ]
+            const y as Number = 50;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 578; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 578; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 579; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 580; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 583; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 583; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 584; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 587; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 587; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 588; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 589; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 592; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 592; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 593; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 594; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 597; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 598; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 599; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 602; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 602; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 603; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__revert.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 604; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 605; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 606; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 609; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 609; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 610; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 611; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 614; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 614; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 615; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__question.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 616; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 617; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 618; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 621; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 621; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 622; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__discard.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 623; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 626; ]
+        module device_info {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 626; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 628 18 ]
+                %tmp.140 = getm $.Toybox.System;
+                %tmp.141 = getv %tmp.140 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.141;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 627; @position = 18; ]
+            const screenWidth as Number = 260;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 628; @position = 18; ]
+            const screenShape;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 629; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 630; @position = 18; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 631; @position = 18; ]
+            const screenHeight as Number = 260;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 632; @position = 18; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 633; @position = 18; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 636; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 636; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 637; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 638; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 641; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 641; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 642 18 ]
+                %tmp.142 = getm $.Toybox.Graphics;
+                %tmp.143 = getv %tmp.142 :TEXT_JUSTIFY_CENTER;
+                %tmp.144 = getm $.Toybox.Graphics;
+                %tmp.145 = getv %tmp.144 :TEXT_JUSTIFY_VCENTER;
+                %tmp.146 = bitor %tmp.143 %tmp.145;
+                putv self :justification %tmp.146;
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 643 18 ]
+                %tmp.147 = getm $.Toybox.Graphics;
+                %tmp.148 = getv %tmp.147 :FONT_TINY;
+                putv self :font %tmp.148;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 642; @position = 18; ]
+            const justification;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 643; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 646; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 646; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 647; @position = 18; ]
+            const scaleX as Float = 0.1539;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 648; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 651; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 651; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 652; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_dark__warning.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 653; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 654; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 655; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 658; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 658; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 659; @position = 18; ]
+            const x as Number = 130;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 660; @position = 18; ]
+            const y as Number = 39;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 661; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 662; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 665; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 665; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 666; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 669; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 669; ]
+            <init> {
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen" 671 18 ]
+                %tmp.149 = getm $.Toybox.Graphics;
+                %tmp.150 = getv %tmp.149 :COLOR_TRANSPARENT;
+                putv self :background %tmp.150;
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 670; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 671; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 674; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 674; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 675; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 676; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 679; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 679; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 680; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 681; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 684; ]
+        module confirmation_size__body {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 684; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 685; @position = 18; ]
+            const width as Number = 156;
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 686; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 689; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 689; ]
+            <init> {
+            }
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 690; @position = 18; ]
+            const filename as String = "/Users/chingtseng/Library/Application Support/Garmin/ConnectIQ/Devices/fr255m/system_icon_positive__check.svg";
+            [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 691; @position = 18; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/bin/gen/006-B3990-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

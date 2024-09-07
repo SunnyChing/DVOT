@@ -1,0 +1,71 @@
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 3; ]
+class CyclesManager{
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 5; ]
+    static
+    function getCycleByIndex(index) {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 33; ]
+    static
+    function getCyclesCount() {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_33_37_35_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc" 34 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "cyclesCount";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_33_37_35_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 37; ]
+    static
+    function setCyclesCount(count) {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_37_42_39_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc" 38 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "cyclesCount";
+        %tmp.6 = lgetv %count;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_37_42_39_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 52; ]
+    static
+    function getUseDoubleClickFlag() {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_52_44_54_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc" 53 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "useDoubleClick";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_52_44_54_4_stop:
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 56; ]
+    static
+    function setUseDoubleClickFlag(value) {
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_56_49_58_4_start:
+[ "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc" 57 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "useDoubleClick";
+        %tmp.6 = lgetv %value;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+_Users_chingtseng_Documents_Projects_Sport_Garmin_App_DVOT_source_manager_CycleManager_mc_56_49_58_4_stop:
+    }
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/manager/CycleManager.mc"; @line = 1; ]
+<init> {
+}

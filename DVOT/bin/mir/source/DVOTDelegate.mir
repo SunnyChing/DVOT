@@ -1,0 +1,23 @@
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 4; ]
+import Toybox.Attention;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 5; ]
+import Toybox.Timer;
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 7; ]
+class ContrastShowerDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+}
+[ @file = "/Users/chingtseng/Documents/Projects/Sport/Garmin_App/DVOT/source/DVOTDelegate.mc"; @line = 1; ]
+<init> {
+}
